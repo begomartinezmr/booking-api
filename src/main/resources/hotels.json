@@ -1,0 +1,165 @@
+[
+    {
+      "id": "00000001",
+      "name": "Four Seasons",
+      "location": {
+        "id": "0001",
+        "name": "London"
+      },
+      "price": 454,
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFour_Seasons_Hotels_and_Resorts&psig=AOvVaw0dnKcBPJC5mV0701m_X8XB&ust=1682543456401000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKiQkfr4xf4CFQAAAAAdAAAAABAZ",
+      "reviews": [
+        {
+          "id": "000001",
+          "rating": 10,
+          "comment": "I really enjoyed my experience in this hotel"
+        },
+        {
+          "id": "000002",
+          "rating": 3,
+          "comment": "I did not enjoyed my experience in this hotel"
+        },
+        {
+          "id": "000003",
+          "rating": 5,
+          "comment": "Average"
+        },
+        {
+          "id": "000004",
+          "rating": 7,
+          "comment": "Cool hotel"
+        },
+        {
+          "id": "000005",
+          "rating": 9,
+          "comment": "Love my room"
+        },
+        {
+          "id": "000006",
+          "rating": 2,
+          "comment": "No parking lot"
+        },
+        {
+          "id": "000007",
+          "rating": 10,
+          "comment": "It was perfect"
+        },
+        {
+          "id": "000008",
+          "rating": 7,
+          "comment": "Good price"
+        },
+        {
+          "id": "000009",
+          "rating": 4,
+          "comment": "Too expensive"
+        },
+        {
+          "id": "0000010",
+          "rating": 9,
+          "comment": "Nice"
+        }
+      ]
+    },
+    {
+      "id": "00000002",
+      "name": "NH Hotel",
+      "location": {
+        "id": "0002",
+        "name": "Madrid"
+      },
+      "price": 200,
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFour_Seasons_Hotels_and_Resorts&psig=AOvVaw0dnKcBPJC5mV0701m_X8XB&ust=1682543456401000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKiQkfr4xf4CFQAAAAAdAAAAABAZ",
+      "reviews": [
+        {
+          "id": "000011",
+          "rating": 10,
+          "comment": "I really enjoyed my experience in this hotel"
+        },
+        {
+          "id": "000012",
+          "rating": 7,
+          "comment": "Cool hotel"
+        },
+        {
+          "id": "000013",
+          "rating": 9,
+          "comment": "Love my room"
+        },
+        {
+          "id": "000014",
+          "rating": 10,
+          "comment": "It was perfect"
+        },
+        {
+          "id": "000015",
+          "rating": 9,
+          "comment": "Nice"
+        }
+      ]
+    },
+    {
+      "id": "00000003",
+      "name": "Melia Hotel",
+      "location": {
+        "id": "0003",
+        "name": "Paris"
+      },
+      "price": 290,
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFour_Seasons_Hotels_and_Resorts&psig=AOvVaw0dnKcBPJC5mV0701m_X8XB&ust=1682543456401000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKiQkfr4xf4CFQAAAAAdAAAAABAZ",
+      "reviews": [
+        {
+          "id": "000016",
+          "rating": 3,
+          "comment": "I did not enjoyed my experience in this hotel"
+        },
+        {
+          "id": "000017",
+          "rating": 5,
+          "comment": "Average"
+        },
+        {
+          "id": "000018",
+          "rating": 2,
+          "comment": "No parking lot"
+        },
+        {
+          "id": "0000019",
+          "rating": 4,
+          "comment": "Too expensive"
+        }
+      ]
+    },
+  {
+    "id": "00000004",
+    "name": "Barcelo Hotel",
+    "location": {
+      "id": "0003",
+      "name": "London"
+    },
+    "price": 100,
+    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFour_Seasons_Hotels_and_Resorts&psig=AOvVaw0dnKcBPJC5mV0701m_X8XB&ust=1682543456401000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKiQkfr4xf4CFQAAAAAdAAAAABAZ",
+    "reviews": [
+      {
+        "id": "000016",
+        "rating": 3,
+        "comment": "I did not enjoyed my experience in this hotel"
+      },
+      {
+        "id": "000017",
+        "rating": 5,
+        "comment": "Average"
+      },
+      {
+        "id": "000018",
+        "rating": 2,
+        "comment": "No parking lot"
+      },
+      {
+        "id": "000009",
+        "rating": 4,
+        "comment": "Too expensive"
+      }
+    ]
+  }
+]

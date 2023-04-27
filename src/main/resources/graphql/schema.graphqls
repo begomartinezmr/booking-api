@@ -1,0 +1,23 @@
+type Query {
+    searchHotels(location: String!, checkInDate: String!, checkOutDate: String!, priceRange: [Int!]!): [Hotel!]!
+}
+
+type Hotel {
+    id: ID!
+    name: String!
+    location: Location!
+    image: String!
+    reviews: [Review]!
+    totalPrice: Int
+}
+
+type Location {
+    id: ID!
+    name: String!
+}
+
+type Review {
+    id: ID!
+    rating: Int!
+    comment: String!
+}
