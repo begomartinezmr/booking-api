@@ -1,5 +1,7 @@
 package com.expedia.bookingsapi.service;
 
+import static com.expedia.bookingsapi.api.utils.BookingConstants.HOTELS_FILE;
+
 import com.expedia.bookingsapi.BookingsApiApplication;
 import com.expedia.bookingsapi.api.model.Hotel;
 import com.expedia.bookingsapi.api.model.Review;
@@ -25,7 +27,7 @@ public class HotelService {
     static {
         try (var reader = new JsonReader(new FileReader(new File(
           Objects.requireNonNull(
-            BookingsApiApplication.class.getClassLoader().getResource("hotels.json")
+            BookingsApiApplication.class.getClassLoader().getResource(HOTELS_FILE)
           ).toURI()
         )))) {
             Hotel[] hotels = new Gson().fromJson(reader, Hotel[].class);

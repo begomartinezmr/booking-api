@@ -11,7 +11,7 @@
 The application will run on http://localhost:8080 by default.
 
 To search for hotels, send a GraphQL query to the API. Here's an example query:
- ``` json
+```graphql
  query {
   searchHotels(
     location: "London",
@@ -34,8 +34,7 @@ To search for hotels, send a GraphQL query to the API. Here's an example query:
     totalPrice
   }
 }
-
- ```
+```
 This query searches for hotels in London with check-in date May 1, 2023 and check-out date May 5, 2023, 
 and with prices between $50 and $500 per night. The response includes the hotel ID, name, location,
 image URL, reviews, and total price for the stay. The list is sorted by the average review (highest first)

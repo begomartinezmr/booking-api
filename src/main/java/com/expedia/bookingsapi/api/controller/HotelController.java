@@ -1,5 +1,11 @@
 package com.expedia.bookingsapi.api.controller;
 
+import static com.expedia.bookingsapi.api.utils.BookingConstants.CHECKIN_PARAMETER;
+import static com.expedia.bookingsapi.api.utils.BookingConstants.CHECKOUT_PARAMETER;
+import static com.expedia.bookingsapi.api.utils.BookingConstants.DATE_FORMAT;
+import static com.expedia.bookingsapi.api.utils.BookingConstants.LOCATION_PARAMETER;
+import static com.expedia.bookingsapi.api.utils.BookingConstants.PRICE_RANGE_PARAMETER;
+
 import com.expedia.bookingsapi.api.model.Hotel;
 import com.expedia.bookingsapi.service.HotelService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +22,7 @@ import java.util.List;
  */
 @Controller
 public class HotelController {
-
     private final HotelService hotelService;
-    private static final String DATE_FORMAT = "MM/dd/yyyy";
 
     /**
      * Constructor for the HotelController class.
@@ -41,10 +45,10 @@ public class HotelController {
      */
     @QueryMapping
     public List<Hotel> searchHotels(
-      final @Argument(name = "location") String location,
-      final @Argument(name = "checkInDate") @DateTimeFormat(pattern = DATE_FORMAT) Date checkInDate,
-      final @Argument(name = "checkOutDate") @DateTimeFormat(pattern = DATE_FORMAT) Date checkOutDate,
-      final @Argument(name = "priceRange") List<Integer> priceRange) {
+      final @Argument(name = LOCATION_PARAMETER) String location,
+      final @Argument(name = CHECKIN_PARAMETER) @DateTimeFormat(pattern = DATE_FORMAT) Date checkInDate,
+      final @Argument(name = CHECKOUT_PARAMETER) @DateTimeFormat(pattern = DATE_FORMAT) Date checkOutDate,
+      final @Argument(name = PRICE_RANGE_PARAMETER) List<Integer> priceRange) {
         if (checkInDate.after(checkOutDate)) {
             throw new IllegalArgumentException("Check-in date must be before check-out date");
         }
